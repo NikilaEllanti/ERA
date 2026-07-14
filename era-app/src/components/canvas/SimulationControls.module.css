@@ -1,0 +1,117 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  transition: all 0.15s;
+}
+
+.btn span {
+  font-size: 0.75rem;
+}
+
+.playBtn {
+  background: var(--blue-primary);
+  color: #fff;
+}
+
+.playBtn:hover {
+  background: var(--blue-light);
+}
+
+.pauseBtn {
+  background: rgba(245,158,11,0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245,158,11,0.3);
+}
+
+.pauseBtn:hover {
+  background: rgba(245,158,11,0.25);
+}
+
+.stopBtn {
+  background: transparent;
+}
+
+.stopBtn:hover:not(:disabled) {
+  background: rgba(239,68,68,0.1);
+  color: #ef4444;
+}
+
+.stopBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border-subtle);
+}
+
+.speedGroup {
+  display: flex;
+  background: var(--bg-secondary);
+  border-radius: 999px;
+  padding: 2px;
+}
+
+.speedBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.speedBtnActive {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+}
+
+.statusIndicator {
+  width: 8px;
+  height: 8px;
+  background: var(--text-muted);
+  border-radius: 50%;
+}
+
+.running {
+  background: var(--green-accent);
+  box-shadow: 0 0 8px var(--green-accent);
+}
+
+.statusText {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
